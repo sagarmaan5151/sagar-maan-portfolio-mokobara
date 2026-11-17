@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagar Maan — Sourcing & Supply Chain Portfolio | Tailored for Mokobara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --surface: #FFFFFF;
+      --surface-warm: #F3EFEA;
+      --ink: #141413;
+      --ink-muted: #5C5954;
+      --accent: #C88A4B;
+      --accent-dark: #A66E34;
+      --accent-soft: #F7EFE5;
+      --border: #E6E0D6;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --shadow-sm: 0 4px 20px rgba(20, 20, 19, 0.04);
+      --shadow-md: 0 12px 32px rgba(20, 20, 19, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .display-font {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 248, 245, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover {
+      background: #2B2A28;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: var(--surface);
+      color: var(--ink);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--ink);
+      background: var(--surface-warm);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 56px 0 40px;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 1px solid rgba(200, 138, 75, 0.25);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: var(--ink);
+    }
+
+    .hero h1 span {
+      color: var(--accent-dark);
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: var(--ink-muted);
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--ink-muted);
+    }
+
+    .meta-tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    /* Section Headings */
+    section {
+      padding: 36px 0;
+    }
+
+    .section-header {
+      margin-bottom: 22px;
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .section-hint {
+      font-size: 14px;
+      color: var(--ink-muted);
+      margin-top: 4px;
+    }
+
+    /* Interactive KPI Cards */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+
+    .kpi-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .kpi-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .kpi-card.active {
+      border-color: var(--ink);
+      background: #FFFDF9;
+    }
+
+    .kpi-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .kpi-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .kpi-toggle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--surface-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink-muted);
+      transition: transform 0.2s ease;
+    }
+
+    .kpi-card.active .kpi-toggle {
+      background: var(--ink);
+      color: #fff;
+      transform: rotate(45deg);
+    }
+
+    .kpi-label {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .kpi-detail {
+      display: none;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--ink-muted);
+      line-height: 1.55;
+    }
+
+    .kpi-card.active .kpi-detail {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    /* 3-Step Sourcing Playbook */
+    .stepper-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .step-tab {
+      flex: 1;
+      min-width: 180px;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      background: var(--bg);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .step-tab:hover {
+      border-color: var(--accent);
+    }
+
+    .step-tab.active {
+      background: var(--ink);
+      color: #FFFFFF;
+      border-color: var(--ink);
+    }
+
+    .step-num {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.75;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .step-tab-title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .step-panel {
+      background: var(--surface-warm);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .step-panel h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .step-panel p {
+      color: var(--ink-muted);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .proof-box {
+      background: var(--surface);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 0 10px 10px 0;
+      font-size: 14px;
+    }
+
+    .proof-box strong {
+      color: var(--ink);
+    }
+
+    /* Recruiter Q&A Pills */
+    .qa-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .qa-pill {
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--ink);
+    }
+
+    .qa-pill:hover {
+      border-color: var(--accent);
+    }
+
+    .qa-pill.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent-dark);
+    }
+
+    .qa-answer-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      animation: fadeIn 0.25s ease;
+    }
+
+    .qa-answer-box h4 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .qa-answer-box p {
+      font-size: 15px;
+      color: var(--ink-muted);
+    }
+
+    /* Experience & Credentials Explorer */
+    .exp-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .exp-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .exp-tab {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink-muted);
+      transition: all 0.2s ease;
+    }
+
+    .exp-tab.active, .exp-tab:hover {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    .role-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .role-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .role-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .role-company {
+      color: var(--accent-dark);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .role-date {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      background: var(--surface-warm);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .role-list {
+      padding-left: 18px;
+      color: var(--ink-muted);
+      font-size: 15px;
+    }
+
+    .role-list li {
+      margin-bottom: 6px;
+    }
+
+    .skills-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill-chip {
+      background: var(--surface-warm);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Boarding Pass Contact Card */
+    .boarding-pass {
+      background: var(--ink);
+      color: #FFFFFF;
+      border-radius: 24px;
+      padding: 32px;
+      margin: 24px 0 60px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .bp-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 22px;
+      border-bottom: 1.5px dashed rgba(255, 255, 255, 0.2);
+    }
+
+    .bp-route {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .bp-plane {
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    .bp-badge {
+      background: rgba(200, 138, 75, 0.2);
+      color: #F3C794;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .bp-body {
+      padding-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .bp-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .bp-field span {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 4px;
+    }
+
+    .bp-field strong {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .bp-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-gold {
+      background: var(--accent);
+      color: #141413;
+      font-weight: 700;
+    }
+
+    .btn-gold:hover {
+      background: #D99B5B;
+    }
+
+    .btn-dark-outline {
+      background: transparent;
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-dark-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Resume Modal */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 20, 19, 0.65);
+      z-index: 100;
+      padding: 24px;
+      overflow-y: auto;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-sheet {
+      background: #FFFFFF;
+      color: #141413;
+      max-width: 780px;
+      width: 100%;
+      border-radius: 16px;
+      padding: 36px;
+      margin: 24px auto;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .modal-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .resume-doc h2 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .resume-doc h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1.5px solid #141413;
+      padding-bottom: 4px;
+      margin: 20px 0 10px;
+    }
+
+    .resume-doc p, .resume-doc li {
+      font-size: 14px;
+      line-height: 1.55;
+      color: #2B2A28;
+    }
+
+    .resume-doc ul {
+      padding-left: 18px;
+      margin-bottom: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media print {
+      body * { visibility: hidden; }
+      .modal-sheet, .modal-sheet * { visibility: visible; }
+      .modal-sheet { position: absolute; left: 0; top: 0; box-shadow: none; padding: 0; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="brand-mark">
+        <span class="brand-dot"></span>
+        <span>Sagar Maan × Mokobara</span>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-outline" onclick="openResume()">ATS Resume</button>
+        <a class="btn btn-primary" href="#contact">Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="pill-badge">Sourcing Associate Application · Prepared for Mokobara</div>
+      <h1>I make sure <span>great products</span> arrive on time, on budget, and built to spec.</h1>
+      <p class="hero-sub">
+        Hands-on sourcing and supply chain operator with experience coordinating 16+ manufacturers, building digital tracking systems that save 4–5 hours a week, and maintaining 99%+ delivery and quality accuracy.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-tag">Ludhiana, India · Open to Relocation</span>
+        <span class="meta-tag">Immediately Available</span>
+        <span class="meta-tag">SAP · Pronto ERP · Excel · SolidWorks</span>
+      </div>
+    </section>
+
+    <!-- Interactive KPI Cards -->
+    <section>
+      <div class="section-header">
+        <div class="section-kicker">Track Record</div>
+        <h2 class="section-title">Four numbers that define how I work</h2>
+        <p class="section-hint">Tap any card to see the real story behind the metric.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card active" onclick="toggleKpi(this)">
+          <div class="kpi-top">
+            <div class="kpi-num">16+</div>
+            <div class="kpi-toggle">+</div>
+          </div>
+          <div class="kpi-label">Active Suppliers Managed</div>
+          <div class="kpi-detail">
+            Coordinated quotes, production readiness, and dispatch timelines across 16 material suppliers and manufacturers at <strong>The North Landscaping</strong>.
+          </div>
+        </div>
+
+        <div class="kpi-card" onclick="toggleKpi(this)">
+          <div class="kpi-top">
+            <div class="kpi-num">99%+</div>
+            <div class="kpi-toggle">+</div>
+          </div>
+          <div class="kpi-label">On-Time Arrival & Quality</div>
+          <div class="kpi-detail">
+            Maintained 99%+ on-time site material delivery, 99%+ dock receiving accuracy across ~240 pallets/shift at <strong>Southwire</strong>, and 99%+ production quality at <strong>Mevotech</strong>.
+          </div>
+        </div>
+
+        <div class="kpi-card" onclick="toggleKpi(this)">
+          <div class="kpi-top">
+            <div class="kpi-num">4–5 hrs</div>
+            <div class="kpi-toggle">+</div>
+          </div>
+          <div class="kpi-label">Saved Every Week</div>
+          <div class="kpi-detail">
+            Replaced scattered phone calls and paper notes with a clean Excel/Google Sheets order tracker built from scratch—cutting weekly follow-up time by 4–5 hours.
+          </div>
+        </div>
+
+        <div class="kpi-card" onclick="toggleKpi(this)">
+          <div class="kpi-top">
+            <div class="kpi-num">12–15%</div>
+            <div class="kpi-toggle">+</div>
+          </div>
+          <div class="kpi-label">Logistics & Cost Reduction</div>
+          <div class="kpi-detail">
+            Cut material and transport overhead by consolidating bulk orders and auditing every supplier invoice and packing slip before payment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Step Sourcing Playbook -->
+    <section>
+      <div class="section-header">
+        <div class="section-kicker">How I Help Mokobara</div>
+        <h2 class="section-title">My 3-step sourcing & vendor routine</h2>
+        <p class="section-hint">Click each step to see how I translate past experience to Mokobara's supply chain.</p>
+      </div>
+
+      <div class="stepper-card">
+        <div class="step-tabs">
+          <button class="step-tab active" onclick="selectStep(0, this)">
+            <span class="step-num">Step 01</span>
+            <span class="step-tab-title">Lock Vendors & Costs</span>
+          </button>
+          <button class="step-tab" onclick="selectStep(1, this)">
+            <span class="step-num">Step 02</span>
+            <span class="step-tab-title">Track Before Dispatch</span>
+          </button>
+          <button class="step-tab" onclick="selectStep(2, this)">
+            <span class="step-num">Step 03</span>
+            <span class="step-tab-title">Verify Specs & Quality</span>
+          </button>
+        </div>
+
+        <div class="step-panel" id="step-panel">
+          <h3>Compare quotes cleanly and audit every rupee before payout</h3>
+          <p>
+            For limited-edition drops and core travel gear, margin leaks happen in rushed orders and unverified freight bills. I compare supplier quotes side-by-side, bundle orders to lower transport rates, and match packing slips against invoices before sign-off.
+          </p>
+          <div class="proof-box">
+            <strong>Real Proof:</strong> Saved <strong>12–15%</strong> in material and transport costs across 16 suppliers by catching billing mismatches early and consolidating shipments.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter Q&A Pills -->
+    <section>
+      <div class="section-header">
+        <div class="section-kicker">Quick Answers for HR</div>
+        <h2 class="section-title">Questions you'll likely ask me first</h2>
+        <p class="section-hint">Tap a question pill for a direct, transparent answer.</p>
+      </div>
+
+      <div class="qa-pills">
+        <button class="qa-pill active" onclick="selectQa(0, this)">Why do your 2023–2025 dates overlap?</button>
+        <button class="qa-pill" onclick="selectQa(1, this)">How do you stop supplier delays?</button>
+        <button class="qa-pill" onclick="selectQa(2, this)">Why Mokobara?</button>
+        <button class="qa-pill" onclick="selectQa(3, this)">When can you join & relocate?</button>
+      </div>
+
+      <div class="qa-answer-box" id="qa-box">
+        <h4>Night shift for stability, day shift to build & pay off debt</h4>
+        <p>
+          From 2023 to 2025, I worked a steady night shift at <strong>Mevotech</strong> for fixed income while co-founding <strong>The North Landscaping</strong> during the day. Our sourcing and logistics hit 99%+ on-time delivery, but lacking specialized trade skills in field landscaping forced us to close with debt. Instead of walking away, I took a daytime warehouse contract at <strong>Southwire</strong> alongside my night shift until every dollar was paid off.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience & Credentials Explorer -->
+    <section>
+      <div class="section-header">
+        <div class="section-kicker">Background & Tools</div>
+        <h2 class="section-title">Experience & technical credentials</h2>
+      </div>
+
+      <div class="exp-controls">
+        <div class="exp-tabs">
+          <button class="exp-tab active" onclick="filterRoles('all', this)">All Roles</button>
+          <button class="exp-tab" onclick="filterRoles('sourcing', this)">Sourcing & Startup</button>
+          <button class="exp-tab" onclick="filterRoles('warehouse', this)">Warehouse & Mfg</button>
+          <button class="exp-tab" onclick="filterRoles('certs', this)">Education & Certs</button>
+        </div>
+      </div>
+
+      <div id="roles-container">
+        <div class="role-card" data-cat="sourcing">
+          <div class="role-header">
+            <div>
+              <div class="role-title">Co-Founder — Sourcing, Logistics & Operations</div>
+              <div class="role-company">The North Landscaping · Brampton, ON</div>
+            </div>
+            <span class="role-date">Feb 2023 – Apr 2024</span>
+          </div>
+          <ul class="role-list">
+            <li>Built a centralized Excel/Google Sheets order-tracking system from scratch, saving <strong>4–5 hours/week</strong> in coordination time.</li>
+            <li>Managed procurement, lead times, and invoice audits across <strong>16 active suppliers</strong> with <strong>99%+ on-time delivery</strong> and <strong>12–15% cost savings</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="role-card" data-cat="warehouse">
+          <div class="role-header">
+            <div>
+              <div class="role-title">Warehouse Specialist (Contract)</div>
+              <div class="role-company">Southwire · Brampton, ON</div>
+            </div>
+            <span class="role-date">Jun 2024 – Dec 2025</span>
+          </div>
+          <ul class="role-list">
+            <li>Received, verified, and processed up to <strong>5 trailers per shift (~240 pallets/day)</strong> against packing lists with <strong>99%+ accuracy</strong>.</li>
+            <li>Resolved SKU and count discrepancies right at the dock before they caused downstream inventory bottlenecks.</li>
+          </ul>
+        </div>
+
+        <div class="role-card" data-cat="warehouse">
+          <div class="role-header">
+            <div>
+              <div class="role-title">Machine Operator (Permanent)</div>
+              <div class="role-company">Mevotech · Brampton, ON</div>
+            </div>
+            <span class="role-date">Jan 2023 – Jan 2026</span>
+          </div>
+          <ul class="role-list">
+            <li>Maintained <strong>99%+ quality compliance</strong> and hit 100% of daily output targets across a 3-year tenure in automotive manufacturing.</li>
+            <li>Supported shop-floor inventory cycle counts and flagged raw material shortages early to supervisors.</li>
+          </ul>
+        </div>
+
+        <div class="role-card" data-cat="warehouse">
+          <div class="role-header">
+            <div>
+              <div class="role-title">Inventory Specialist</div>
+              <div class="role-company">H&M · Brampton, ON</div>
+            </div>
+            <span class="role-date">Dec 2021 – Jun 2022</span>
+          </div>
+          <ul class="role-list">
+            <li>Completed <strong>~80 cycle-count locations/day</strong> across fast-moving retail SKUs, maintaining <strong>98%+ inventory accuracy</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="role-card" data-cat="certs">
+          <div class="role-header">
+            <div>
+              <div class="role-title">Education & Technical Certifications</div>
+              <div class="role-company">CTR Ludhiana · DeepLearning.AI · Centennial College</div>
+            </div>
+            <span class="role-date">2019 – 2026</span>
+          </div>
+          <ul class="role-list">
+            <li><strong>CNC Programming (Oct 2026)</strong> & <strong>SolidWorks CAD (Sep 2026)</strong> — Central Tool Room (CTR), Ludhiana (Ministry of MSME).</li>
+            <li><strong>Multi AI Agent Systems (2024)</strong> — DeepLearning.AI | <strong>Microsoft Office Specialist Associate (2021)</strong>.</li>
+            <li><strong>Office Administration – Health Services (2022)</strong> — Centennial College, ON.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills-strip">
+        <span class="skill-chip">SAP ERP</span>
+        <span class="skill-chip">Pronto Xi ERP / WMS</span>
+        <span class="skill-chip">Excel & Google Sheets Trackers</span>
+        <span class="skill-chip">RFQ & Vendor Negotiation</span>
+        <span class="skill-chip">Invoice & Packing-Slip Audit</span>
+        <span class="skill-chip">SolidWorks CAD Reading</span>
+        <span class="skill-chip">CNC Programming</span>
+        <span class="skill-chip">Multi-AI Agent Workflows</span>
+        <span class="skill-chip">English · Punjabi · Hindi</span>
+      </div>
+    </section>
+
+    <!-- Boarding Pass Contact Card -->
+    <section id="contact">
+      <div class="boarding-pass">
+        <div class="bp-top">
+          <div class="bp-route">
+            <span>LDH</span>
+            <span class="bp-plane">✈</span>
+            <span>MOKOBARA HQ</span>
+          </div>
+          <div class="bp-badge">Ready for Boarding · Immediate Joiner</div>
+        </div>
+
+        <div class="bp-body">
+          <div class="bp-details">
+            <div class="bp-field">
+              <span>Candidate</span>
+              <strong>Sagar Maan</strong>
+            </div>
+            <div class="bp-field">
+              <span>Role</span>
+              <strong>Sourcing Associate</strong>
+            </div>
+            <div class="bp-field">
+              <span>Phone</span>
+              <strong>+91 7837637655</strong>
+            </div>
+            <div class="bp-field">
+              <span>Email</span>
+              <strong>sagarmaan5151@gmail.com</strong>
+            </div>
+          </div>
+
+          <div class="bp-actions">
+            <button class="btn btn-gold" onclick="copyEmail(this)">Copy Email</button>
+            <button class="btn btn-dark-outline" onclick="openResume()">Print / Save PDF Resume</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Printable ATS Resume Modal -->
+  <div class="modal-backdrop" id="resume-modal" onclick="closeResumeOutside(event)">
+    <div class="modal-sheet">
+      <div class="modal-bar no-print">
+        <strong>ATS-Ready Resume — Sagar Maan</strong>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-primary" onclick="window.print()">Print / Save PDF</button>
+          <button class="btn btn-outline" onclick="closeResume()">Close</button>
+        </div>
+      </div>
+
+      <div class="resume-doc">
+        <h2>SAGAR MAAN</h2>
+        <p><strong>Ludhiana, Punjab, India</strong> | +91 7837637655 | sagarmaan5151@gmail.com | Open to Relocation | Immediately Available</p>
+
+        <h3>Professional Summary</h3>
+        <p>
+          Detail-oriented operations and supply chain professional with hands-on experience spanning vendor sourcing, digitized logistics tracking, high-volume warehouse receiving/dispatch, and manufacturing quality control. Proven track record of coordinating across 16+ active suppliers, building custom Excel/Google Sheets tracking systems that save administrative hours, and maintaining 99%+ inventory, receiving, and delivery accuracy.
+        </p>
+
+        <h3>Skills</h3>
+        <ul>
+          <li><strong>ERP, WMS & Digital Systems:</strong> SAP, Pronto (Pronto Xi ERP / WMS), Microsoft Excel & Google Sheets (Custom Logistics Trackers, Pivot Tables, Reporting), Multi-Agent AI Workflows</li>
+          <li><strong>Sourcing & Procurement:</strong> Vendor & Supplier Management (16+ Active Suppliers), RFQ & Quote Comparison, Lead-Time & Pre-Dispatch Tracking, Invoice & Packing-Slip Reconciliation, Bulk Order Consolidation & Cost Reduction</li>
+          <li><strong>Supply Chain & Warehouse Operations:</strong> High-Volume Inbound Receiving & Outbound Dispatch (Up to 5 Trailers / approx. 240 Pallets per Shift), Inventory Control & Cycle Counting (approx. 80 Sites/Day), Putaway & Order Picking, SKU Reconciliation</li>
+          <li><strong>Engineering & Technical:</strong> SolidWorks (CAD Reading & Part Visualization), CNC Programming, Blueprint & Tolerance Interpretation</li>
+          <li><strong>Languages:</strong> English (Fluent), Punjabi (Native), Hindi (Fluent)</li>
+        </ul>
+
+        <h3>Work Experience</h3>
+        <p><strong>Co-Founder — Sourcing, Logistics & Operations</strong> | The North Landscaping, Brampton, ON | Feb 2023 – Apr 2024</p>
+        <ul>
+          <li>Built a centralized digital logistics and order-tracking system (Excel/Google Sheets) from scratch, saving 4–5 hours per week in coordination time and preventing missed delivery deadlines.</li>
+          <li>Managed procurement, scheduling, and invoice reconciliation across 16 active suppliers/manufacturers, achieving 99%+ on-time material arrival and cutting logistics/material overhead by 12–15%.</li>
+        </ul>
+
+        <p><strong>Warehouse Specialist (Full-Time, Agency Contract)</strong> | Southwire, Brampton, ON | Jun 2024 – Dec 2025</p>
+        <ul>
+          <li>Received, verified, and processed up to 5 trailers per shift (approx. 48 pallets per truck / 240 pallets daily) against packing lists with 99%+ receiving and picking accuracy.</li>
+          <li>Caught and resolved documentation and count discrepancies directly at the dock, preventing downstream inventory errors and staging bottlenecks.</li>
+        </ul>
+
+        <p><strong>Machine Operator (Full-Time, Permanent)</strong> | Mevotech, Brampton, ON | Jan 2023 – Jan 2026</p>
+        <ul>
+          <li>Maintained 99%+ quality compliance across daily automotive parts production runs and consistently achieved 100% of daily production targets across a 3-year tenure.</li>
+        </ul>
+
+        <p><strong>Inventory Specialist (Part-Time / Temporary)</strong> | H&M, Brampton, ON | Dec 2021 – Jun 2022</p>
+        <ul>
+          <li>Completed approx. 80 cycle-count sites/locations per day, maintaining 98%+ inventory record accuracy across high-turnover retail SKUs.</li>
+        </ul>
+
+        <h3>Education & Certifications</h3>
+        <ul>
+          <li><strong>Certification in CNC Programming</strong> — Central Tool Room (CTR), Ludhiana (Ministry of MSME, Govt. of India) | October 2026</li>
+          <li><strong>Certification in SolidWorks</strong> — Central Tool Room (CTR), Ludhiana (Ministry of MSME, Govt. of India) | September 2026</li>
+          <li><strong>Multi AI Agent Systems</strong> — DeepLearning.AI | 2024</li>
+          <li><strong>Office Administration – Health Services</strong> — Centennial College, ON | 2022</li>
+          <li><strong>Microsoft Office Specialist Associate</strong> | 2021</li>
+          <li><strong>Senior Secondary (Applied Science)</strong> — Senior Secondary School for Meritorious Students, Ludhiana, PB | 2019</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleKpi(card) {
+      card.classList.toggle('active');
+    }
+
+    const steps = [
+      {
+        title: "Compare quotes cleanly and audit every rupee before payout",
+        body: "For limited-edition drops and core travel gear, margin leaks happen in rushed orders and unverified freight bills. I compare supplier quotes side-by-side, bundle orders to lower transport rates, and match packing slips against invoices before sign-off.",
+        proof: "Saved 12–15% in material and transport costs across 16 suppliers by catching billing mismatches early and consolidating shipments."
+      },
+      {
+        title: "Spot production delays 5 days early—not on delivery morning",
+        body: "Instead of waiting for a vendor to miss a dispatch date, I track milestone check-ins (raw material ready, assembly, QC, dispatch) inside a single shared tracker so bottlenecks get solved before launch calendars slip.",
+        proof: "Built a custom Excel/Google Sheets tracker from scratch that saved 4–5 hours/week in manual follow-ups and maintained 99%+ on-time arrival."
+      },
+      {
+        title: "Speak the factory's language on hardware, tolerances & finishes",
+        body: "Design-led luggage and accessories depend on precision zippers, shells, hardware, and stitching. With 3 years on a manufacturing floor plus SolidWorks and CNC credentials, I read technical drawings and catch spec drift early.",
+        proof: "Maintained 99%+ production quality compliance at Mevotech and 99%+ dock verification accuracy across ~240 pallets/shift at Southwire."
+      }
+    ];
+
+    function selectStep(idx, btn) {
+      document.querySelectorAll('.step-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      const panel = document.getElementById('step-panel');
+      panel.innerHTML = `
+        <h3>${steps[idx].title}</h3>
+        <p>${steps[idx].body}</p>
+        <div class="proof-box"><strong>Real Proof:</strong> ${steps[idx].proof}</div>
+      `;
+    }
+
+    const qas = [
+      {
+        q: "Night shift for stability, day shift to build & pay off debt",
+        a: "From 2023 to 2025, I worked a steady night shift at <strong>Mevotech</strong> for fixed income while co-founding <strong>The North Landscaping</strong> during the day. Our sourcing and logistics hit 99%+ on-time delivery, but lacking specialized trade skills in field landscaping forced us to close with debt. Instead of walking away, I took a daytime warehouse contract at <strong>Southwire</strong> alongside my night shift until every dollar was paid off."
+      },
+      {
+        q: "Proactive milestone check-ins + digitized tracking",
+        a: "Delays rarely happen on the day of shipping—they happen days earlier when raw materials or sub-components stall. I break vendor timelines into clear pre-dispatch checkpoints inside a live Google Sheet/Excel tracker and follow up before issues snowball."
+      },
+      {
+        q: "Design-led products deserve disciplined supply chains",
+        a: "Mokobara's limited-edition drops and travel gear stand out because every zipper, wheel, and finish feels intentional. My background combines vendor negotiation, high-volume warehouse execution, and SolidWorks/CNC literacy—so I can bridge design specs and factory reality."
+      },
+      {
+        q: "Immediately available & ready to relocate",
+        a: "I am currently based in Ludhiana, Punjab with zero notice period, and I am ready to relocate immediately for Mokobara's sourcing and supply chain team."
+      }
+    ];
+
+    function selectQa(idx, btn) {
+      document.querySelectorAll('.qa-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const box = document.getElementById('qa-box');
+      box.innerHTML = `<h4>${qas[idx].q}</h4><p>${qas[idx].a}</p>`;
+    }
+
+    function filterRoles(cat, btn) {
+      document.querySelectorAll('.exp-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.role-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function copyEmail(btn) {
+      navigator.clipboard.writeText('sagarmaan5151@gmail.com');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+
+    function openResume() {
+      document.getElementById('resume-modal').classList.add('open');
+    }
+
+    function closeResume() {
+      document.getElementById('resume-modal').classList.remove('open');
+    }
+
+    function closeResumeOutside(e) {
+      if (e.target.id === 'resume-modal') closeResume();
+    }
+  </script>
+</body>
+</html>
